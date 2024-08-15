@@ -33,9 +33,8 @@ int main() {
         prev2=sum;
         cout<<prev2<<" ";
     }*/
-  /* cout<<"0 1";
-    fibonacci(0,1);
-   */
+   /*cout<<"0 1";
+    fibonacci(0,1);*/
   cout<<fibonacci(19);
   return 0;
 }
