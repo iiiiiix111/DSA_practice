@@ -48,13 +48,38 @@ void  SelectionSort(int* a,size_t size)
         swap(a[i],a[flag]);
     }
 }
+void  InsertionSort(int* a,size_t size)
+{
+    for (int i=1;i<size;i++)
+        for (int j=i;j>0;j--)
+        {
+            if (a[j]<a[j-1])
+                swap(a[j],a[j-1]);
+            else
+                break;
+        }
+}
+void QuickSort(int array[],int low,int high)
+{
+    if (low<high)
+    {
+        int PivotIndex=(array,low,high);
+        QuickSort(array,low,PivotIndex-1);
+        QuickSort(array,PivotIndex+1,high);
+    }
+}
+int PivotIndex(int array[],int low,int high)
+{
+    
+}
 int main()
 {
     int a[]={1,0,3,4,5,6,9,8};
     int size1=sizeof(a);//此处求的是数组a的内存大小
     int size=sizeof(a)/sizeof(a[0]);//求数组的大小
     //cout<<lowest(a,size);
-    SelectionSort(a,size);
+    //SelectionSort(a,size);
+    InsertionSort(a,size);
     show(a,size);
     return 0;
 }
