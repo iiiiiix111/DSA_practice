@@ -55,6 +55,19 @@
 				0,
 				1
 			]
+		},
+		{
+			"compileCommandFragments" : 
+			[
+				{
+					"fragment" : "-g -fdiagnostics-color=always"
+				}
+			],
+			"language" : "C",
+			"sourceIndexes" : 
+			[
+				2
+			]
 		}
 	],
 	"id" : "DSA::@6890427a1f51a3e7e1df",
@@ -91,7 +104,8 @@
 			"sourceIndexes" : 
 			[
 				0,
-				1
+				1,
+				2
 			]
 		}
 	],
@@ -107,6 +121,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
 			"path" : "array.cpp",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "tree.c",
 			"sourceGroupIndex" : 0
 		}
 	],
