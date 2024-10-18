@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="LeetcodeEditor">
+    <option name="projectConfig">
+      <map>
+        <entry key="$PROJECT_DIR$/../myproject/leetcode/editor/cn/2796)-repeat-string.c">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../myproject/leetcode/editor/cn/doc/content/2796)-repeat-string.md" />
+              <option name="frontendQuestionId" value="leetcode.cn2796" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../myproject/leetcode/editor/cn/2796)-repeat-string.c" />
+              <option name="titleSlug" value="repeat-string" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../myproject/leetcode/editor/cn/3)-longest-substring-without-repeating-characters.c">
+          <value>
+            <LeetcodeEditor>
+              <option name="contentPath" value="$PROJECT_DIR$/../myproject/leetcode/editor/cn/doc/content/3)-longest-substring-without-repeating-characters.md" />
+              <option name="frontendQuestionId" value="leetcode.cn3" />
+              <option name="host" value="leetcode.cn" />
+              <option name="path" value="$PROJECT_DIR$/../myproject/leetcode/editor/cn/3)-longest-substring-without-repeating-characters.c" />
+              <option name="titleSlug" value="longest-substring-without-repeating-characters" />
+            </LeetcodeEditor>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

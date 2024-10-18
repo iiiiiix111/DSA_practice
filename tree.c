@@ -49,9 +49,44 @@ TreeNode* insertNode(TreeNode* node,int data)
         node->left= insertNode(node->left,data);
     return node;
 }
-void deleteNode(TreeNode* node,int data)
+TreeNode* minValNode(TreeNode* node)
 {
+    TreeNode* current=node;
+    while (current&&current->left!=NULL)
+        current=current->left;
+    return current;
+}
+TreeNode* deleteNode(TreeNode* node,int data)//free掉目标节点，并更新其余节点的指向
+{
+    if (node==NULL)
+        return node;
+    if (node->data>data)//继续寻找正确位置
+        node->left= deleteNode(node->left,data);
+    else if (node->data<data)//继续寻找正确位置
+        node->right= deleteNode(node->right,data);
+    else//找到正确位置
+    {
+        //---只有一个子节点或无子节点的情况
+     if (node->left==NULL)//包含了左子节点为空和都为空的情况
+     {
+         TreeNode* temp=node->right;
+         free(node);
+         return temp;
+     }
+     else if (node->right==NULL)//左子节点为空但右子节点不为空的情况
+     {
+         TreeNode* temp=node->left;
+         free(node);
+         return temp;
+     }
 
+     //----------有两个子节点的情况
+     TreeNode* temp= minValNode(node->right);
+     node->data=temp->data;
+        deleteNode(node->right,temp->data);
+        //直接free(temp)  会造成野指针，必须更新temp的父节点指向为NULL
+        //即使用deleteNode函数
+    }
 }
 char* get_data(char binaryTreeArray[],int index)//array implementation
 {
@@ -67,6 +102,7 @@ int left_child_index(int index)
 {
     return 2*index+1;
 }
+
 int main()
 {
     TreeNode* root = createNode(13);
