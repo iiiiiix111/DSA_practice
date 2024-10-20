@@ -67,7 +67,8 @@
 			"sourceIndexes" : 
 			[
 				2,
-				3
+				3,
+				4
 			]
 		}
 	],
@@ -107,7 +108,8 @@
 				0,
 				1,
 				2,
-				3
+				3,
+				4
 			]
 		}
 	],
@@ -135,6 +137,12 @@
 			"backtrace" : 1,
 			"compileGroupIndex" : 1,
 			"path" : "AVLtree.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 1,
+			"path" : "Hash Table.c",
 			"sourceGroupIndex" : 0
 		}
 	],
